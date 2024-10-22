@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="relative">
+
+<!-- Navbar -->
+<nav class="absolute top-0 left-0 w-full py-6 px-10  z-10">
+  <div class="container mx-auto flex justify-between items-center max-w-[1280px]">
+    
+    <!-- Navigation Links -->
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-gray-700 hover:text-red-500">Çözüm ve Hizmetler</a>
+      <a href="#" class="text-gray-700 hover:text-red-500">Ürünler</a>
+      <a href="#" class="text-gray-700 hover:text-red-500">Teknolojiler</a>
+      <a href="#" class="text-gray-700 hover:text-red-500">İnsan Kaynakları</a>
+      <a href="#" class="text-gray-700 hover:text-red-500">Kurumsal</a>
+    </div>
+
+    <!-- Contact Button -->
+    <a href="#" class="hidden md:block bg-red-500 text-white py-2 px-5 rounded hover:bg-red-600">İletişim</a>
+
+    <!-- Hamburger Icon for Small Screens -->
+    <div class="md:hidden">
+      <button id="hamburger" class="text-gray-700 hover:text-red-500 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobileMenu" class="hidden md:hidden flex-col items-center space-y-4 bg-white py-4 px-8 absolute top-16 left-0 w-full shadow-md">
+    <a href="#" class="block text-gray-700 hover:text-red-500">Çözüm ve Hizmetler</a>
+    <a href="#" class="block text-gray-700 hover:text-red-500">Ürünler</a>
+    <a href="#" class="block text-gray-700 hover:text-red-500">Teknolojiler</a>
+    <a href="#" class="block text-gray-700 hover:text-red-500">İnsan Kaynakları</a>
+    <a href="#" class="block text-gray-700 hover:text-red-500">Kurumsal</a>
+    <a href="#" class="block bg-red-500 text-white py-2 px-5 rounded hover:bg-red-600">İletişim</a>
+  </div>
+</nav>
+
+<!-- Main Section -->
+<section class="h-screen bg-cover bg-center relative" style="background-image: url('../assets/bgpicture.png');">
+  <div class="h-full flex items-center justify-center">
+    <div class="container mx-auto max-w-[1280px] px-6 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold text-black mb-6">
+        Bilgi Teknolojilerinde<br />23 Yıllık Tecrübe
+      </h1>
+      <p class="text-gray-700 mb-8 max-w-full md:max-w-[450px] mx-auto md:mx-0">
+        Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center md:justify-start">
+        <input type="email" placeholder="Mail bültenimize kayıt ol" class="p-3 rounded-l-lg border border-gray-300 w-full md:w-80 focus:outline-none">
+        <button class="bg-red-500 text-white px-6 py-3 rounded-r-lg hover:bg-red-600 mt-4 md:mt-0 md:ml-0">Kayıt Ol</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Toggle Mobile Menu
+  document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+    <!-- Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center max-w-[1280px]">
+            <h2 class="text-3xl font-bold mb-6">Kalite ve Süreç Yönetimi</h2>
+            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+                Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/File.png" alt="Doküman Analizi" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Doküman Analizi</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/Star.png" alt="Kabul ve Değerlendirme" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Kabul ve Değerlendirme</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/Crown.png" alt="İş Kuralları Analizi" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">İş Kuralları Analizi</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/ChartBar.png" alt="Akış Diyagramları" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Akış Diyagramları</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/ChartPieSlice.png" alt="Paydaş Analizi" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Paydaş Analizi</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="../assets/FigmaLogo.png" alt="Prototipleme" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Prototipleme</h3>
+                    <p class="text-gray-600">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  <!-- Section Container -->
+  <section class="bg-red-500 text-white py-12 px-6">
+    <!-- Heading -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold">Test Yönetimiyle Neler Sağlıyoruz?</h2>
+      <p class="mt-2 text-lg font-medium">IoT Destekli Çözümler</p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+      <!-- Feature 1 -->
+      <div>
+        <span class="inline-block mb-4 text-2xl">✔️</span>
+        <p class="font-semibold">Yazılım Kalitesini Artırıyoruz</p>
+      </div>
+      <!-- Feature 2 -->
+      <div>
+        <span class="inline-block mb-4 text-2xl">✔️</span>
+        <p class="font-semibold">Olası Hataları Önceden Belirliyoruz</p>
+      </div>
+      <!-- Feature 3 -->
+      <div>
+        <span class="inline-block mb-4 text-2xl">✔️</span>
+        <p class="font-semibold">Oluşabilecek Riskleri Önlüyoruz</p>
+      </div>
+      <!-- Feature 4 -->
+      <div>
+        <span class="inline-block mb-4 text-2xl">✔️</span>
+        <p class="font-semibold">Zaman ve Maliyetten Tasarruf Sağlıyoruz</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-12 px-6">
+    <!-- Responsive Grid Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+      <!-- First Content Block (Left Text, Right Image) -->
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Kalite ve Süreç Yönetimi</h2>
+        <p class="text-gray-600 mb-6">
+          Deneyimli kadromuz, birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunuz düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMP® metodolojisini şirketinize uygulamak ve geliştirmek için yanınızdayız.
+        </p>
+        <a href="#" class="w-20 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600">Keşfet</a>
+      </div>
+      <div class="flex justify-center">
+        <img src="../assets/Illustration.png" alt="Kalite ve Süreç Yönetimi" class="rounded-lg shadow-lg">
+      </div>
+
+      <!-- Second Content Block (Left Image, Right Text) -->
+      <div class="flex justify-center">
+        <img src="../assets/adwsd.png" alt="Test Yönetimi ve Analizi" class="rounded-lg shadow-lg">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Test Yönetimi ve Analizi</h2>
+        <p class="text-gray-600 mb-6">
+          Danışmanlığını yürüttüğümüz projelerde yazılım hatalarını önlemek amacıyla gerçekleştirilen testler ile proje aşamalarını manuel ya da test otomasyonu ile eksiksiz uygulamaktayız. Deneyimli test ekibimiz, kurumlara yönelik katma değer katacak test hizmetini baştan sona güvenli, kaliteli ve hızlı bir şekilde en müşteri dostu şekilde sunmaktayız.
+        </p>
+        <a href="#" class="bg-red-500 text-white w-20 py-2 px-4 rounded hover:bg-red-600">Keşfet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- References Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <!-- Title -->
+      <h2 class="text-3xl font-bold text-gray-800 mb-2">Referanslarımız</h2>
+      <p class="text-gray-600 mb-10">Bize güvenen ve beraber çalıştığımız iş ortaklarımız</p>
+
+      <!-- Logos Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-center">
+        <!-- Individual Logos -->
+        <div class="flex justify-center">
+          <img src="../assets/Microsoft Logo.png" alt="Borusan" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/OLA Logo.png" alt="Akbank" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/OYO Logo.png" alt="Istanbul University" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/Walmart Logo.png" alt="Akçansa" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/Google Logo.png" alt="Aktaş" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/Col 1.png" alt="Amazon" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/Col 5.png" alt="BookMyShow" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="../assets/BookMyShow Logo.png" alt="Ola" class="h-16">
+        </div>
+      </div>
+
+      <!-- "See All" Button -->
+      <div class="mt-10">
+        <a href="#" class="text-orange-500 hover:text-orange-600 text-lg font-semibold inline-flex items-center">
+          Tümünü Gör <span class="ml-2">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Bize Ulaşın -->
+  <section class="flex flex-col items-center justify-center bg-white py-16">
+    <div class="flex flex-col items-center">
+      <!-- Icon -->
+      <div class="text-6xl mb-4">
+        <span class="inline-block w-12 h-12 rounded-full bg-red-500 text-white flex items-center justify-center">👥</span>
+      </div>
+      <!-- Title -->
+      <h2 class="text-3xl font-semibold mb-4">Bize Ulaşın</h2>
+      <!-- Description -->
+      <p class="text-gray-600 mb-6 text-center">
+        Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.
+      </p>
+      <!-- Button -->
+      <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-600 transition">Bize Ulaşın</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-red-500 text-white py-10">
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
+      <!-- Column 1 -->
+      <div>
+        <h3 class="font-semibold mb-4">Çözüm ve Hizmetler</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Yazılım Geliştirme</a></li>
+          <li><a href="#" class="hover:underline">Outsourcing</a></li>
+          <li><a href="#" class="hover:underline">Kalite ve Süreç Yönetimi</a></li>
+          <li><a href="#" class="hover:underline">Danışmanlık</a></li>
+          <li><a href="#" class="hover:underline">IoT Destekli Çözümler</a></li>
+        </ul>
+      </div>
+      <!-- Column 2 -->
+      <div>
+        <h3 class="font-semibold mb-4">Ürünler</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Eğitim Yönetim Sistemi</a></li>
+          <li><a href="#" class="hover:underline">İnsan Sermayesi Yönetim Sistemi</a></li>
+          <li><a href="#" class="hover:underline">Müşteri İlişkileri Yönetim Sistemi</a></li>
+          <li><a href="#" class="hover:underline">İçerik Yönetim Sistemi</a></li>
+        </ul>
+      </div>
+      <!-- Column 3 -->
+      <div>
+        <h3 class="font-semibold mb-4">Kurumsal</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Hakkımızda</a></li>
+          <li><a href="#" class="hover:underline">Belge ve Yeterlilikler</a></li>
+          <li><a href="#" class="hover:underline">İş Ortakları</a></li>
+        </ul>
+      </div>
+      <!-- Column 4 -->
+      <div>
+        <h3 class="font-semibold mb-4">İletişim</h3>
+        <ul>
+          <li><a href="#" class="hover:underline">Bilgi İstek Formu</a></li>
+          <li><a href="#" class="hover:underline">Uzman Talep Formu</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-10 text-sm">
+      © Copyright 2010-2021 - Can Çevik
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center space-x-4 mt-4">
+      <a href="#" class="text-white hover:text-gray-300">🌐</a>
+      <a href="#" class="text-white hover:text-gray-300">💼</a>
+      <a href="#" class="text-white hover:text-gray-300">🔗</a>
+      <a href="#" class="text-white hover:text-gray-300">🐦</a>
+      <a href="#" class="text-white hover:text-gray-300">📸</a>
+    </div>
+  </footer>
+</body>
+</html>
